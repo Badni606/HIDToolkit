@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:clipChildren="false">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/y_button"
+        style="@style/gamepad_button_style"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@color/y_yellow"
+        android:text="Y"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/x_button"
+        style="@style/gamepad_button_style"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/logo_blue"
+        android:keepScreenOn="true"
+        android:text="X"
+        app:layout_constraintEnd_toStartOf="@+id/y_button"
+        app:layout_constraintTop_toBottomOf="@+id/y_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/b_button"
+        style="@style/gamepad_button_style"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/b_red"
+        android:text="B"
+        app:layout_constraintStart_toEndOf="@+id/y_button"
+        app:layout_constraintTop_toBottomOf="@+id/y_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/a_button"
+        style="@style/gamepad_button_style"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/a_green"
+        android:text="A"
+        app:layout_constraintEnd_toStartOf="@+id/b_button"
+        app:layout_constraintTop_toBottomOf="@+id/b_button" />
+
+    <Matthew.comp3200.UI.Components.Joystick
+        android:id="@+id/thumb_stick"
+        android:layout_width="30mm"
+        android:layout_height="30mm"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Matthew.comp3200.UI.Components.ConnectionView
+        android:id="@+id/gamepad_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

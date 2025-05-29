@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bkgrd_grey">
+
+    <TextView
+        android:id="@+id/control_title"
+        style="@style/title_style"
+        android:layout_marginStart="121dp"
+        android:layout_marginEnd="121dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Select Controller"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/gamepad_select"
+        style="@style/controller_menu_button_style"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/logo_green"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/gamepad_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/control_title" />
+
+    <ImageButton
+        android:id="@+id/wheel_select"
+        style="@style/controller_menu_button_style"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/logo_blue"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/wheel_icon"
+        app:layout_constraintStart_toStartOf="@+id/mouse_select"
+        app:layout_constraintTop_toBottomOf="@+id/mouse_select" />
+
+    <ImageButton
+        android:id="@+id/mouse_select"
+        style="@style/controller_menu_button_style"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/logo_purple"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/mouse_icon"
+        app:layout_constraintStart_toStartOf="@+id/gamepad_select"
+        app:layout_constraintTop_toBottomOf="@+id/gamepad_select" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30mm"
+        android:layout_height="30mm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
