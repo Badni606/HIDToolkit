@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="controller_menu_button_style" >
+        <item name="android:layout_width">20mm</item>
+        <item name="android:layout_height">20mm</item>
+        <item name="android:background">@drawable/controller_menu_button_drawable</item>
+    </style>
+
+    <style name="title_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text_style" parent="title_style">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="device_list_entry_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="gamepad_button_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/gamepad_button_drawable</item>
+        <item name="android:textSize">62px</item>
+    </style>
+
+    <style name="joystick_style">
+        <item name="android:background">@drawable/gamepad_button_drawable</item>
+        <item name="android:backgroundTint">@color/joy_grey</item>
+    </style>
+
+</resources>

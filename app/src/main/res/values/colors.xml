@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lime">#15FF0C</color>
+    <color name="transparent">#00000000</color>
+    <color name="joy_grey">#575757</color>
+
+    <color name="bkgrd_grey">#36393F</color>
+    <color name="logo_orange">#D35714</color>
+    <color name="logo_green">#09A109</color>
+    <color name="logo_blue">#3B55FF</color>
+    <color name="logo_purple">#8725A1</color>
+
+    <color name="connection_true">#00CA00</color>
+    <color name="connection_reconnecting">#FF5816</color>
+    <color name="connection_false">#C30000</color>
+
+    <color name="x_blue">#40ccd0</color>
+    <color name="y_yellow">#ecdb33</color>
+    <color name="a_green">#3cdb4e</color>
+    <color name="b_red">#d04242</color>
+
+</resources>
